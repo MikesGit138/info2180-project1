@@ -28,6 +28,10 @@
     --footer-bg-color: #4A5568;
     --footer-text-color: white;
 }
+*{
+    box-sizing: border-box;
+    border: 1px solid red;
+}
 body {
     margin: 0;
     font-size: 18px;
@@ -40,10 +44,15 @@ body {
     margin: 0 auto;
     max-width: 960px;
     width: 100%;
-    display: flex;
-    justify-content: space-around;
 }
 
+header .container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
 nav ul li{
     text-decoration: none;
     display: inline-flex;
@@ -56,4 +65,23 @@ nav ul li a{
     text-decoration: none;
     color: black;
     padding: 10px;
+}
+
+.overview-hero .container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: var(--hero-bg-color);
+}
+
+.overview-hero .container .overview-hero-text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+.overview-hero .container .overview-hero-image{
+    backdrop-filter: blur(5px);
 }
