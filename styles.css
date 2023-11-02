@@ -222,3 +222,8 @@ footer{
     padding: 2em;
     margin: 0;
 }
+
+.error-message {
+    color: red;
+  }
+  
