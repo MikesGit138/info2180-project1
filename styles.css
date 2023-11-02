@@ -21,7 +21,7 @@
     --headingnlinks-color: #5A67D8;
     --title-recent-stories-size: 18px;
     /* newsletter variables */
-    --newsletter-bg-color: #5A67D8;
+    --newsletter-bg-color: #48BB78;
     --newsletter-text-color: white;
     --newsletter-subscribe-color: #5A57D8;
     /* footer variables */
@@ -44,6 +44,7 @@ body {
     margin: 0 auto;
     max-width: 960px;
     width: 100%;
+    padding: 1em;
 }
 
 header .container{
@@ -139,5 +140,25 @@ section.stories .container article{
 section.stories a{
     text-decoration: none;
     color: var(--headingnlinks-color);
-    
+}
+
+section.newsletter{
+    background-color: var(--newsletter-bg-color);
+    color: var(--newsletter-text-color);
+    padding: 2em;
+}
+section.newsletter button{
+    background-color: var(--newsletter-subscribe-color);
+    color: white;
+    border-radius: var(--rounded-corners);
+    padding: 10px;
+    margin: 10px;
+    border: none;
+}
+
+footer{
+    background-color: var(--footer-bg-color);
+    color: var(--footer-text-color);
+    padding: 2em;
+    margin: 0;
 }
